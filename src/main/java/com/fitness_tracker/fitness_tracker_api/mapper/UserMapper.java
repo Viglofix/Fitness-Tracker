@@ -1,5 +1,6 @@
 package com.fitness_tracker.fitness_tracker_api.mapper;
 
+import com.fitness_tracker.fitness_tracker_api.dto.BasicInfoDto;
 import com.fitness_tracker.fitness_tracker_api.dto.UserDto;
 import com.fitness_tracker.fitness_tracker_api.entity.User;
 
@@ -11,16 +12,18 @@ public class UserMapper
                 user.getName(),
                 user.getLastName(),
                 user.getBirthDate(),
-                user.getEmail()
+                user.getEmail(),
+                user.getAge()
         );
     }
     public static User maptoUser(UserDto userDto){
         return new User(
-            userDto.getId(),
-            userDto.getName(),
-            userDto.getLastName(),
-            userDto.getBirthDate(),
-            userDto.getEmail()
+            userDto.id(),
+            userDto.name(),
+            userDto.lastName(),
+            userDto.birthDate(),
+            userDto.email(),
+            userDto.age()
         );
     }
 }

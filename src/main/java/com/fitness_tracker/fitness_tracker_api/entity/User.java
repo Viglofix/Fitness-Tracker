@@ -17,14 +17,16 @@ import java.time.LocalDate;
 public class User {
     @Id
     @Column(name="id")
-    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "users_sq")
+    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "users_seq")
     private Long id;
     @Column(name="name")
     private String name;
     @Column(name="last_name")
     private String lastName;
-    @Column(name="brith_date")
+    @Column(name="birth_date")
     private LocalDate birthDate;
-    @Column(name="email")
+    @Column(name="email",unique = true)
     private String email;
+    @Column(name="age")
+    private Integer age;
 }
