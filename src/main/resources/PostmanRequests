@@ -1,0 +1,16 @@
+1. localhost:8080/api/users/create
+{
+    "name":"jasiek",
+    "lastName":"siarkowski",
+    "birthDate":"2025-01-01",
+    "email":"denwalXXXxzyxxzxzcxcx@xmail.com",
+    "age":30
+}
+2. localhost:8080/api/users/1
+3. localhost:8080/api/users/
+4. localhost:8080/api/users/delete/1
+5. localhost:8080/api/users/update/1
+6. localhost:8080/api/users/get-info?id=1&infoType=email
+7. localhost:8080/api/users/basic-info
+8. localhost:8080/api/users/basic-info-email/{name or email}
+9. localhost:8080/api/users/all_users_by_age/{age}
